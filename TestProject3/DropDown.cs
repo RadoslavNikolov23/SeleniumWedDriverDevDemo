@@ -15,8 +15,11 @@ namespace TestProject3
         [SetUp]
         public void SetUp()
         {
+            ChromeOptions options = new ChromeOptions();
+            options.AddArgument("--headless");
+
             // Create object of ChromeDriver
-            driver = new ChromeDriver();
+            driver = new ChromeDriver(options);
 
             // Add implicit wait
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
