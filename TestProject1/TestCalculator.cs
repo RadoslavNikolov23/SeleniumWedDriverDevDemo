@@ -9,7 +9,7 @@ namespace TestProject1
     [TestFixture]
     public class TestCalculator
     {
-        ChromeDriver driver;
+        IWebDriver driver;
         IWebElement textBoxFirstNum;
         IWebElement textBoxSecondNum;
         IWebElement dropDownOperation;
